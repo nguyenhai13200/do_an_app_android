@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_back" />
+    <TextView
+        android:id="@+id/ten_acivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Đổi mật khẩu"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/panel_oldpassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/ten_acivity"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="16dp"
+        android:hint="Mật khẩu cũ"
+        android:padding="15dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/panel_passwordnew"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/panel_oldpassword"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="16dp"
+        android:hint="Mật khẩu mới"
+        android:padding="15dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/panel_passwordnew2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/panel_passwordnew"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="16dp"
+        android:hint="Nhập lại mật khẩu mới"
+        android:padding="15dp"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:id="@+id/btn_setpasswordnew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/panel_passwordnew2"
+        android:gravity="center_horizontal"
+        android:background="@drawable/custum_btn"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Đăng ký"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</RelativeLayout>

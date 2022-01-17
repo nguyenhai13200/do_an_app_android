@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C9C9C"
+    tools:context=".Activity.GioHangActivity">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="16"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="11"
+            android:gravity="center"
+            android:text="Thay avatar"
+            android:textColor="@color/color_toolbar"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dong_gach"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#9C9C9C"
+        app:layout_constraintBottom_toBottomOf="@+id/panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel" />
+
+    <ImageView
+        android:id="@+id/image_choose_Avatar"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/avatar_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel" />
+
+    <Button
+        android:id="@+id/button_choose_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Chọn ảnh trong thư viện"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/image_choose_Avatar" />
+
+    <Button
+        android:id="@+id/select_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Dùng ảnh làm avatar"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_choose_avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
